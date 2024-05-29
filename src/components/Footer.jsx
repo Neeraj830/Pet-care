@@ -4,9 +4,9 @@ import React from 'react';
 function Footer() {
   return (
     <footer className="p-10 bg-gray-800 text-white">
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         <div>
-          <h3 className="text-xl font-semibold">Pet care</h3>
+          <h3 className="text-xl font-semibold">Pet Care</h3>
           <p>Opening times: 9am - 6pm</p>
         </div>
         <div>
@@ -27,7 +27,7 @@ function Footer() {
           </ul>
         </div>
         <div>
-          <h3 className="text-xl font-semibold">How to help</h3>
+          <h3 className="text-xl font-semibold">How to Help</h3>
           <ul>
             <li><a href="#volunteer" className="hover:underline">Volunteer</a></li>
             <li><a href="#donate" className="hover:underline">Donate</a></li>
