@@ -5,17 +5,26 @@ import catHelpImage2 from '../assets/cat-help2.jpg';
 
 function HowCanWeHelp() {
   return (
-    <section className="p-10 bg-white text-center">
-      <h2 className="text-3xl font-bold mb-6">How can we help</h2>
-      <p className="text-lg mb-10">While you are on vacation or at work can be stressful.</p>
-      <div className="flex justify-center lg:justify-around flex-wrap space-x-0 lg:space-x-6">
-        <div className="flex flex-col items-center mb-6 lg:mb-0">
-          <img src={catHelpImage1} alt="Cat Help 1" className="w-48 h-64 lg:w-64 lg:h-80 object-cover rounded-full lg:rounded-3xl shadow-lg mb-4" />
-          <p className="text-lg">We take care of your pets like they are our own.</p>
+    <section className="flex items-center justify-center h-screen bg-white-50 text-center">
+      <div className="flex flex-col lg:flex-row items-center justify-center lg:space-x-6">
+        <div className="relative w-24 h-24 lg:w-32 lg:h-32 mb-6 lg:mb-0">
+          <img src={catHelpImage1} alt="Cat Help 1" className="w-full h-full object-cover rounded-full shadow-lg" />
+          <button className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white rounded-full w-4 h-4 lg:w-6 lg:h-6"></button>
         </div>
+        
         <div className="flex flex-col items-center mb-6 lg:mb-0">
-          <img src={catHelpImage2} alt="Cat Help 2" className="w-48 h-64 lg:w-64 lg:h-80 object-cover rounded-full lg:rounded-3xl shadow-lg mb-4" />
-          <p className="text-lg">Providing love and attention they need.</p>
+          <p className="text-lg font-bold text-indigo-950 mb-10 lg:mb-4">How can we help</p>
+          <p className="text-lg font-semibold text-indigo-950 hidden lg:block">While you are on vacation or at work can be stressful.</p>
+        </div>
+
+        <div className="relative w-24 h-24 lg:w-32 lg:h-32 mb-6 lg:mb-0">
+          <img src={catHelpImage2} alt="Cat Help 2" className="w-full h-full object-cover rounded-full shadow-lg" />
+          <span className="absolute bottom-0 right-0 bg-black bg-opacity-50 text-white text-xs p-1 rounded-full lg:text-sm lg:px-2">See Stories</span>
+        </div>
+        
+        <div className="relative w-24 h-24 lg:w-32 lg:h-32 mb-6 lg:mb-0">
+          <img src={catHelpImage1} alt="Cat Help 1" className="w-full h-full object-cover rounded-full shadow-lg" />
+          <span className="absolute bottom-0 right-0 bg-black bg-opacity-50 text-white text-xs p-1 rounded-full lg:text-sm lg:px-2">See Stories</span>
         </div>
       </div>
     </section>

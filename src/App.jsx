@@ -18,6 +18,7 @@ function App() {
         <HowCanWeHelp /> 
         <Services />
         <Statistics/>
+        <Services />
         <Testimonial />
         <Newsletter />
       </main>
